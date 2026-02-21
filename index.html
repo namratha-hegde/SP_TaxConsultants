@@ -22,7 +22,7 @@
 <section class="hero">
   <h2>Your Trusted Partner in Tax & Compliance</h2>
   <p>Providing expert guidance for businesses to stay compliant, efficient, and risk-free.</p>
-  <a href="mailto:nimmi280295@gmail.com" class="btn">Get in Touch</a>
+  <a href="mailto:nimmi280295@gmail.com?subject=Inquiry%20from%20Website&body=Hello%2C%20I%20would%20like%20to%20get%20in%20touch%20regarding%20your%20services." class="btn">Get in Touch</a>
 </section>
 
 <!-- Services Section -->
@@ -32,37 +32,30 @@
     <div class="card">
       <h3>GST Advisory & Compliance</h3>
       <p>Expert guidance on GST compliance, filing, and optimization to minimize liabilities.</p>
-      <a href="mailto:nimmi280295@gmail.com" class="btn-card">Contact</a>
     </div>
     <div class="card">
       <h3>Customs & Trade Compliance</h3>
       <p>Assistance with import/export regulations and customs procedures for full compliance.</p>
-      <a href="mailto:nimmi280295@gmail.com" class="btn-card">Contact</a>
     </div>
     <div class="card">
       <h3>DGFT & Foreign Trade Policy</h3>
       <p>Comprehensive audits of trade compliance and adherence to DGFT regulations.</p>
-      <a href="mailto:nimmi280295@gmail.com" class="btn-card">Contact</a>
     </div>
     <div class="card">
       <h3>MOOWR Scheme Advisory</h3>
       <p>Strategic advisory to optimize benefits under the MOOWR scheme.</p>
-      <a href="mailto:nimmi280295@gmail.com" class="btn-card">Contact</a>
     </div>
     <div class="card">
       <h3>SEZ / EOU / STPI Advisory</h3>
       <p>Expert guidance for businesses operating in SEZ, EOU, and STPI zones to stay compliant.</p>
-      <a href="mailto:nimmi280295@gmail.com" class="btn-card">Contact</a>
     </div>
     <div class="card">
       <h3>RBI & FEMA Compliance</h3>
       <p>Professional advisory on foreign exchange regulations and RBI compliance matters.</p>
-      <a href="mailto:nimmi280295@gmail.com" class="btn-card">Contact</a>
     </div>
     <div class="card">
       <h3>BIS Certification Support</h3>
       <p>Assistance in obtaining BIS certification and meeting quality standards efficiently.</p>
-      <a href="mailto:nimmi280295@gmail.com" class="btn-card">Contact</a>
     </div>
   </div>
 </section>
@@ -94,10 +87,10 @@
   <p>📧 <a href="mailto:santhoshhegde1903@gmail.com">santhoshhegde1903@gmail.com</a></p>
   <p>📧 <a href="mailto:jr.prabhakar1964@gmail.com">jr.prabhakar1964@gmail.com</a></p>
 
-  <form class="contact-form" action="mailto:nimmi280295@gmail.com" method="POST" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <form class="contact-form" onsubmit="window.location.href='mailto:nimmi280295@gmail.com?subject=' + encodeURIComponent(document.getElementById('name').value) + '&body=' + encodeURIComponent(document.getElementById('message').value); return false;">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
     <button type="submit" class="btn">Send Message</button>
   </form>
 </section>
