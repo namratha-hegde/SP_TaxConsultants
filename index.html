@@ -1,122 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>S P Tax Consultants | Tax & Trade Advisors</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            line-height: 1.6;
-            background: #f4f6f9;
-        }
-        header {
-            background: #0d3b66;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #144c7a;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px;
-            max-width: 1000px;
-            margin: auto;
-            background: white;
-            margin-top: 20px;
-        }
-        h2 {
-            color: #0d3b66;
-        }
-        footer {
-            background: #0d3b66;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-        .btn {
-            display: inline-block;
-            background: #0d3b66;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin-top: 10px;
-        }
-    </style>
+    <title>SP Tax Consultants</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- <header>
-    <h1>S P Tax Consultants</h1>
-    <p>Indirect Taxation & Trade Compliance Experts</p>
-</header> -->
-    
-<header class="site-header">
-    <img src="logo.jpg" alt="SP Tax Consultant Logo" class="header-logo">
-    <div class="header-text">
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="SP Tax Consultant Logo" class="header-logo">
+        </div>
+        <nav class="nav-menu">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
         <h1>S P Tax Consultants</h1>
         <p>Indirect Taxation & Trade Compliance Experts</p>
-    </div>
-</header>
+        <a href="#contact" class="cta-btn">Get in Touch</a>
+    </section>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#partners">Partners</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>GST Consulting</h3>
+                <p>Expert guidance on GST compliance, filing, and optimization to minimize liabilities.</p>
+            </div>
+            <div class="card">
+                <h3>Trade Compliance</h3>
+                <p>Assistance with import/export regulations and customs procedures for full compliance.</p>
+            </div>
+            <div class="card">
+                <h3>Indirect Tax Audit</h3>
+                <p>Comprehensive audits of GST, VAT, and customs duties to identify risks and discrepancies.</p>
+            </div>
+            <div class="card">
+                <h3>Tax Advisory & Planning</h3>
+                <p>Strategic tax planning and advisory to optimize your business’s tax position.</p>
+            </div>
+            <div class="card">
+                <h3>Regulatory Reporting</h3>
+                <p>Accurate preparation and submission of statutory reports and filings to authorities.</p>
+            </div>
+            <div class="card">
+                <h3>Compliance Training</h3>
+                <p>Tailored training for staff on GST, indirect taxes, and trade compliance.</p>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        S P Tax Consultants is a professional consultancy firm specializing in GST, Customs, DGFT, SEZ, MOOWR Scheme, RBI & FEMA compliance.
-        With 35+ years of industry expertise, we provide strategic regulatory and operational support across India.
-    </p>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>SP Tax Consultants is dedicated to providing expert guidance on indirect taxation and trade compliance. Our team of professionals ensures your business stays compliant, efficient, and ahead in regulatory matters.</p>
+    </section>
 
-<section id="services">
-    <h2>Our Services</h2>
-    <ul>
-        <li>GST Advisory & Compliance</li>
-        <li>Customs & Trade Compliance</li>
-        <li>DGFT & Foreign Trade Policy</li>
-        <li>MOOWR Scheme Advisory</li>
-        <li>SEZ / EOU / STPI Advisory</li>
-        <li>RBI & FEMA Compliance</li>
-        <li>BIS Certification Support</li>
-    </ul>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for personalized consultation and compliance support.</p>
+        <form action="#" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-<section id="partners">
-    <h2>Our Partners</h2>
-    <p><strong>Santhosh Kumar</strong> – 35+ years in Indirect Taxation, former AVP & Country Head of Indirect Taxes.</p>
-    <p><strong>J.R. Prabhakar</strong> – 35+ years in Trade Compliance, former Country Trade Compliance Officer.</p>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>
-        📍 #536, 11th A Main, MEI Layout, Bagalakunte, Bangalore - 73<br>
-        📞 9901490182 / 9901490184<br>
-        📧 santhoshhegde1903@gmail.com<br>
-        📧 jr.prabhakar1964@gmail.com
-    </p>
-</section>
-
-<footer>
-    <p>© 2026 S P Tax Consultants | All Rights Reserved</p>
-</footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 SP Tax Consultants. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
