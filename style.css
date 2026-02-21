@@ -1,4 +1,4 @@
-/* Global */
+/* Global Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,13 +9,14 @@
 body {
     line-height: 1.6;
     color: #333;
+    background: #f4f6f9; /* merged background */
 }
 
 /* Header */
 .header {
     text-align: center;
     padding: 30px 20px;
-    background-color: #0d6efd; /* blue header */
+    background-color: #0d3b66; /* darker blue merged */
     color: white;
     width: 100%;
 }
@@ -36,17 +37,35 @@ body {
     font-size: 1.2rem;
 }
 
+/* Navigation (optional if you add nav links) */
+nav {
+    background: #144c7a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 60px 20px; /* compact */
-    background: #f5f5f5;
+    padding: 60px 20px;
+    background: #ffffff; /* white background for sections */
+    max-width: 1000px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 .hero h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #0d6efd;
+    color: #0d3b66;
 }
 
 .hero p {
@@ -56,7 +75,7 @@ body {
 
 .btn {
     padding: 12px 25px;
-    background-color: #0d6efd;
+    background-color: #0d3b66;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -66,14 +85,18 @@ body {
 /* Services Section */
 .services {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
     background-color: #ffffff;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 .services h2 {
     font-size: 2.2rem;
     margin-bottom: 30px;
-    color: #0d6efd;
+    color: #0d3b66;
 }
 
 .service-cards {
@@ -95,7 +118,7 @@ body {
 
 .card h3 {
     margin-bottom: 10px;
-    color: #0d6efd;
+    color: #0d3b66;
 }
 
 .card p {
@@ -106,7 +129,7 @@ body {
 .btn-card {
     display: inline-block;
     padding: 8px 20px;
-    background-color: #0d6efd;
+    background-color: #0d3b66;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -116,32 +139,39 @@ body {
 /* About Section */
 .about {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 .about h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #0d6efd;
+    color: #0d3b66;
 }
 
 .about p {
-    max-width: 700px;
-    margin: 0 auto;
     font-size: 1.05rem;
 }
 
 /* Contact Section */
 .contact {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f8f9fa;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 .contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #0d6efd;
+    color: #0d3b66;
 }
 
 .contact-form {
@@ -164,7 +194,7 @@ body {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background-color: #0d6efd;
+    background-color: #0d3b66;
     color: white;
     font-weight: 600;
     cursor: pointer;
@@ -172,10 +202,11 @@ body {
 
 /* Footer */
 .footer {
+    background: #0d3b66;
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    margin-top: 30px;
 }
 
 /* Responsive */
