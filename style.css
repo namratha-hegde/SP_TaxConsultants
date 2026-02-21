@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,14 +14,14 @@ body {
 /* Header */
 .header {
     text-align: center;
-    padding: 40px 20px 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    background-color: #0d6efd; /* blue header */
+    color: white;
     width: 100%;
 }
 
 .header-logo {
-    width: 200px; /* larger logo */
+    width: 250px;
     max-width: 100%;
     display: block;
     margin: 0 auto 10px;
@@ -29,57 +29,49 @@ body {
 
 .header-text h1 {
     font-size: 2.8rem;
-    color: #0d6efd;
     margin-bottom: 5px;
 }
 
 .header-text p {
     font-size: 1.2rem;
-    color: #555;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 80px 20px; /* reduced padding */
-    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+    padding: 60px 20px; /* compact */
+    background: #f5f5f5;
 }
 
 .hero h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 15px;
     color: #0d6efd;
 }
 
 .hero p {
     font-size: 1.1rem;
-    margin-bottom: 25px;
-    color: #555;
+    margin-bottom: 20px;
 }
 
 .btn {
-    padding: 12px 30px;
+    padding: 12px 25px;
     background-color: #0d6efd;
     color: white;
-    text-decoration: none;
     border-radius: 5px;
+    text-decoration: none;
     font-weight: 600;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #0056b3;
 }
 
 /* Services Section */
 .services {
     text-align: center;
-    padding: 60px 20px; /* reduced space */
-    background-color: #f9f9f9;
+    padding: 50px 20px;
+    background-color: #ffffff;
 }
 
 .services h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 30px;
     color: #0d6efd;
 }
@@ -88,62 +80,66 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* reduced spacing */
+    gap: 15px;
 }
 
 .card {
-    background-color: white;
-    padding: 20px 15px;
+    background-color: #f8f9fa;
+    padding: 20px;
     border-radius: 10px;
-    width: 240px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card h3 {
     margin-bottom: 10px;
-    color: #333;
-    font-size: 1.05rem;
+    color: #0d6efd;
 }
 
 .card p {
-    color: #555;
     font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.btn-card {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 /* About Section */
 .about {
     text-align: center;
-    padding: 60px 20px; /* reduced space */
+    padding: 50px 20px;
 }
 
 .about h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 15px;
     color: #0d6efd;
 }
 
 .about p {
-    font-size: 1.05rem;
     max-width: 700px;
     margin: 0 auto;
-    color: #555;
+    font-size: 1.05rem;
 }
 
 /* Contact Section */
 .contact {
     text-align: center;
-    padding: 60px 20px; /* reduced space */
-    background-color: #f9f9f9;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
 }
 
 .contact h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #0d6efd;
 }
@@ -172,11 +168,6 @@ body {
     color: white;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
 }
 
 /* Footer */
