@@ -9,14 +9,14 @@
 body {
     line-height: 1.6;
     color: #333;
-    background: #f4f6f9; /* merged background */
+    background: #f4f6f9;
 }
 
 /* Header */
 .header {
     text-align: center;
     padding: 30px 20px;
-    background-color: #0d3b66; /* darker blue merged */
+    background-color: #0d3b66; /* darker blue */
     color: white;
     width: 100%;
 }
@@ -37,25 +37,11 @@ body {
     font-size: 1.2rem;
 }
 
-/* Navigation (optional if you add nav links) */
-nav {
-    background: #144c7a;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background: #ffffff; /* white background for sections */
+    background: #ffffff;
     max-width: 1000px;
     margin: 20px auto 0;
     border-radius: 8px;
@@ -80,6 +66,12 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #09325a;
+    transform: scale(1.05);
 }
 
 /* Services Section */
@@ -114,6 +106,13 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
 .card h3 {
@@ -134,6 +133,12 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: #09325a;
+    transform: scale(1.05);
 }
 
 /* About Section */
@@ -198,6 +203,12 @@ nav a {
     color: white;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #09325a;
+    transform: scale(1.05);
 }
 
 /* Footer */
