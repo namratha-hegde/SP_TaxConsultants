@@ -1,3 +1,50 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #0b1f4f;
+  background: #f4f6f9;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 0;
+  background-color: #0b1f4f; /* Dark blue header */
+  width: 100%;
+  position: relative;
+}
+
+.header-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.header-text p {
+  font-size: 1.3rem;
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
@@ -21,10 +68,175 @@
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  margin-top: 20px;  /* added margin to move the button down */
+  margin-top: 20px; /* Moves "Get in Touch" button slightly down */
 }
 
 .btn:hover {
   background-color: #071433;
   transform: scale(1.05);
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ffffff;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.services h2 {
+  color: #0b1f4f;
+  margin-bottom: 30px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.card h3, .card p {
+  color: #0b1f4f;
+}
+
+/* Partners Section */
+.partners {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.partners h2 {
+  color: #0b1f4f;
+  margin-bottom: 25px;
+}
+
+.partner-card {
+  margin-bottom: 20px;
+  color: #0b1f4f;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.about h2 {
+  color: #0b1f4f;
+  margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.contact h2 {
+  color: #0b1f4f;
+  margin-bottom: 20px;
+}
+
+.contact p, .contact p a {
+  color: #0b1f4f;
+  text-decoration: none;
+}
+
+.contact p a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0b1f4f;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #071433;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background: #0b1f4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-text h1 {
+    font-size: 2rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
 }
