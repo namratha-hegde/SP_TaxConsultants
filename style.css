@@ -8,7 +8,7 @@
 
 body {
   line-height: 1.6;
-  color: #333;
+  color: #0b1f4f;
   background: #f4f6f9;
 }
 
@@ -16,9 +16,8 @@ body {
 .header {
   text-align: center;
   padding: 30px 20px;
-  background-color: #0b1f4f; /* Dark blue */
+  background-color: #0b1f4f; /* Dark blue header */
   color: white;
-  width: 100%;
 }
 
 .header-logo {
@@ -28,13 +27,8 @@ body {
   margin: 0 auto 10px;
 }
 
-.header-text h1 {
-  font-size: 2.8rem;
-  margin-bottom: 5px;
-}
-
-.header-text p {
-  font-size: 1.2rem;
+.header-text h1, .header-text p {
+  color: white;
 }
 
 /* Hero Section */
@@ -43,20 +37,13 @@ body {
   padding: 60px 20px;
   background: #ffffff;
   max-width: 1000px;
-  margin: 20px auto 0;
+  margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+.hero h2, .hero p {
   color: #0b1f4f;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
 }
 
 .btn {
@@ -78,7 +65,7 @@ body {
 .services {
   text-align: center;
   padding: 40px 20px;
-  background-color: #ffffff;
+  background: #ffffff;
   max-width: 1000px;
   margin: 20px auto;
   border-radius: 8px;
@@ -86,9 +73,8 @@ body {
 }
 
 .services h2 {
-  font-size: 2.2rem;
-  margin-bottom: 30px;
   color: #0b1f4f;
+  margin-bottom: 30px;
 }
 
 .service-cards {
@@ -99,13 +85,10 @@ body {
 }
 
 .card {
-  background-color: #f8f9fa;
+  background: #f8f9fa;
   padding: 20px;
   border-radius: 10px;
   width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -115,30 +98,8 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
-.card h3 {
-  margin-bottom: 10px;
+.card h3, .card p {
   color: #0b1f4f;
-}
-
-.card p {
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
-
-.btn-card {
-  display: inline-block;
-  padding: 8px 20px;
-  background-color: #0b1f4f;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.btn-card:hover {
-  background-color: #071433;
-  transform: scale(1.05);
 }
 
 /* Partners Section */
@@ -147,28 +108,19 @@ body {
   padding: 40px 20px;
   max-width: 1000px;
   margin: 20px auto;
-  background: white;
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 .partners h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
   color: #0b1f4f;
+  margin-bottom: 25px;
 }
 
 .partner-card {
   margin-bottom: 20px;
-}
-
-.partner-card h3 {
   color: #0b1f4f;
-  margin-bottom: 5px;
-}
-
-.partner-card p {
-  font-size: 1rem;
 }
 
 /* About Section */
@@ -177,19 +129,14 @@ body {
   padding: 40px 20px;
   max-width: 1000px;
   margin: 20px auto;
-  background: white;
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 .about h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
   color: #0b1f4f;
-}
-
-.about p {
-  font-size: 1.05rem;
+  margin-bottom: 15px;
 }
 
 /* Contact Section */
@@ -197,19 +144,18 @@ body {
   text-align: center;
   padding: 40px 20px;
   max-width: 1000px;
-  margin: 20px auto 0;
-  background: white;
+  margin: 20px auto;
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 .contact h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
   color: #0b1f4f;
+  margin-bottom: 20px;
 }
 
-.contact p a {
+.contact p, .contact p a {
   color: #0b1f4f;
   text-decoration: none;
 }
