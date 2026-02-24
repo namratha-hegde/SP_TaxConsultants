@@ -62,7 +62,7 @@ body {
 
 /* SECTIONS */
 section {
-  padding: 60px 10%;
+  padding: 40px 10%;
 }
 
 h2 {
@@ -142,6 +142,23 @@ h2 {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
+}
+
+.about p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.about h3 {
+  margin-top: 20px;
+  color: #0d2b6b;
+}
+
+.sub-heading {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 5px;
 }
 
 .btn {
