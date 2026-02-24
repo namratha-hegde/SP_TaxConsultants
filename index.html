@@ -3,113 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SP Tax Consultant</title>
+<title>SP Tax Consultants</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- Navigation -->
 <nav class="navbar">
-  <div class="logo">SP Tax Consultant</div>
+  <div class="logo">SP Tax Consultants</div>
   <ul>
+    <li><a href="index.html">Home</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#partners">Partners</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<!-- Main Header -->
-<header class="main-header">
-  <h1>SP TAX CONSULTANT</h1>
-  <p class="tagline">Optimizing Taxes. Empowering Profits.</p>
+<header class="header">
+  <img src="logo.jpg" class="header-logo">
+  <div class="overlay"></div>
+  <div class="header-text">
+    <h1>Indirect Taxation & Trade Compliance Experts</h1>
+  </div>
 </header>
 
-<!-- Services Section -->
 <section id="services" class="services">
   <h2>Our Services</h2>
-
   <div class="service-grid">
 
-    <div class="service-card">
+    <a href="gst.html" class="service-box">
+      <img src="gst_advisory_compliance.jpg">
       <h3>GST Advisory & Compliance</h3>
-      <p>Complete GST advisory including registration, filing, audits and litigation support.</p>
-    </div>
+    </a>
 
-    <div class="service-card">
+    <a href="customs.html" class="service-box">
+      <img src="Custom_and_Trade_Compliance.jpg">
       <h3>Customs & Trade Compliance</h3>
-      <p>Import/export advisory, classification, valuation and customs compliance support.</p>
-    </div>
+    </a>
 
-    <div class="service-card">
+    <a href="dgft.html" class="service-box">
+      <img src="DGFT_and_Foreign_Trade_Policy.jpg">
       <h3>DGFT & Foreign Trade Policy</h3>
-      <p>Export incentives, licensing and Foreign Trade Policy consultation.</p>
-    </div>
+    </a>
 
-    <div class="service-card">
+    <a href="moowr.html" class="service-box">
+      <img src="MOOWR_Scheme_Advisory.jpg">
       <h3>MOOWR Scheme Advisory</h3>
-      <p>Duty deferment advisory and complete MOOWR scheme implementation support.</p>
-    </div>
+    </a>
 
-    <div class="service-card">
+    <a href="sez.html" class="service-box">
+      <img src="SEZ_EOU_STPI_Advisory.jpg">
       <h3>SEZ / EOU / STPI Advisory</h3>
-      <p>Compliance and regulatory support for SEZ, EOU and STPI units.</p>
-    </div>
+    </a>
 
-    <div class="service-card">
+    <a href="rbi.html" class="service-box">
+      <img src="RBI_FEMA_Compliance.jpg">
       <h3>RBI & FEMA Compliance</h3>
-      <p>Foreign investment compliance, RBI approvals and FEMA advisory services.</p>
-    </div>
+    </a>
 
-    <div class="service-card">
+    <a href="bis.html" class="service-box">
+      <img src="BIS_Certification_Support.jpg">
       <h3>BIS Certification Support</h3>
-      <p>End-to-end BIS certification documentation and regulatory support.</p>
-    </div>
+    </a>
 
   </div>
 </section>
 
-<!-- Partners -->
 <section id="partners" class="partners">
   <h2>Our Partners</h2>
-
   <div class="partner-card">
     <h3>Santhosh Kumar</h3>
     <p>35+ years in Indirect Taxation, former AVP & Country Head of Indirect Taxes.</p>
   </div>
-
   <div class="partner-card">
     <h3>J.R. Prabhakar</h3>
     <p>35+ years in Trade Compliance, former Country Trade Compliance Officer.</p>
   </div>
 </section>
 
-<!-- Contact -->
 <section id="contact" class="contact">
   <h2>Contact Us</h2>
-
   <p>#536, 11th A Main, MEI Layout, Bagalakunte, Bangalore - 73</p>
   <p>9901490182 / 9901490184</p>
   <p>santhoshhegde1903@gmail.com</p>
   <p>jr.prabhakar1964@gmail.com</p>
-
-  <form class="contact-form" 
-    onsubmit="window.location.href='mailto:nimmi280295@gmail.com?subject=' + 
-    encodeURIComponent(document.getElementById('name').value) + 
-    '&body=' + encodeURIComponent(document.getElementById('message').value); 
-    return false;">
-
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn">Send Message</button>
-  </form>
-
 </section>
 
-<footer class="footer">
-  <p>&copy; 2026 SP Tax Consultants. All Rights Reserved.</p>
+<footer>
+  <p>© 2026 SP Tax Consultants. All Rights Reserved.</p>
 </footer>
 
 </body>
