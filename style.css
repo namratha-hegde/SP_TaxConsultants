@@ -118,6 +118,28 @@ h2 {
   border: 1px solid #e1e1e1;
 }
 
+.partner-card {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between image and text */
+  margin-bottom: 20px;
+}
+
+.partner-img {
+  width: 80px; /* adjust size as needed */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%; /* optional: makes image circular */
+}
+
+.partner-info h3 {
+  margin: 0;
+}
+
+.partner-info p {
+  margin: 5px 0 0 0;
+}
+
 /* CONTACT */
 .contact {
   text-align: center;
