@@ -147,15 +147,19 @@ h2 {
 }
 
 .partner-info p {
-  margin-top: 5px;
   color: #555;
 }
 
+.ex-company {
+  margin-left: 6px;
+  font-weight: 500;
+}
+
 .abb-logo {
-  width: 2px;
+  width: 14px;
   height: auto;
   margin-left: 4px;
-  vertical-align: right;
+  vertical-align: middle;
 }
 
 /* CONTACT */
