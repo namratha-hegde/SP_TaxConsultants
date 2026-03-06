@@ -151,6 +151,13 @@ h2 {
   color: #555;
 }
 
+.abb-logo {
+  width: 14px;
+  height: auto;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
 /* CONTACT */
 .contact {
   text-align: center;
